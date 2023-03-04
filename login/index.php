@@ -11,7 +11,7 @@
         <form action="includes/signup.inc.php" method="post">
             <input type="text"
              placeholder="Enter your username" 
-             required="required"
+             
              autocomplete="off"  name="username">
              <input type="password"
              placeholder="Enter your password" 

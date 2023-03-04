@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <form action="includes/login.inc.php">
             <input type="text"
              placeholder="Enter your username" 
-             required="required"
+             
              autocomplete="off"  name="username">
              <input type="password"
              placeholder="Enter your password" 

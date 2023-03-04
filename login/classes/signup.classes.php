@@ -17,7 +17,7 @@ class Signup extends Dbh{
     }
 
     protected function checkUser($uid){
-        $stmt = $this->connect()->prepare('SELECT user_id FROM user_data WHERE  user_id = ?;');
+        $stmt = $this->connect()->prepare('SELECT user_id FROM user_data WHERE  username = ?;');
         
         if(!$stmt->execute(array($uid))){
             $stmt = null;

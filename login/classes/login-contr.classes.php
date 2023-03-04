@@ -1,6 +1,6 @@
 <?php
 
-class LoginSignupContr extends Signup {
+class LoginContr extends Signup {
 
     private $username;
     private $password;

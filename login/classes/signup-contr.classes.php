@@ -25,7 +25,7 @@ class SignupContr extends Signup {
                 exit();
             }
             if($this->userExist()== false){
-                header("location: ../index.php?error=userExists");
+                header("location: ../index.php?error=userExists");              
                 exit();
             }
 
@@ -69,10 +69,10 @@ class SignupContr extends Signup {
     private function userExist(){
         $result;
         if(!$this->checkUser($this->username)){
-            return false;
+            $result= false;
         }
         else{
-            return true;
+            $result= true;
         }
         return $result;
     }
