@@ -1,3 +1,7 @@
+<?php
+ session_start();
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php echo("tHIS IS A TEST");?>
+   
 	<header>
         <div class="container">
 		<img class="logo" src="images/logo.png" alt="logo">
@@ -21,9 +25,27 @@
             </ul>
            
         </nav>
-        <a class="cta" href="#a"><button>Book</button></a>
+
+        <?php 
+      if(isset($_SESSION["userid"])){
+      ?>
+
+        <a class="cta" href="login/includes/logout.inc.php"><button>Log Out</button></a>
+     
+        <?php  
+        }
+        else{
+        ?>
+         
+         <a class="cta" href="login/signin.php"><button>Log In</button></a>
+         <?php  
+        }     
+        ?>   
+
+        
     </div>  
 	</header>
 
 </body>
 </html>
+

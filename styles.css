@@ -12,6 +12,8 @@ header {
    align-items: center;
  
 }
+
+
 .container{
     width: 1400px;
     display: flex;
@@ -61,4 +63,20 @@ button{
 
 button:hover{
     background-color: rgba(0,136,169,0.8);
+}
+
+.form-container
+    {
+        display: flex;
+        justify-content:center;
+       align-items: center;
+     
+    }
+    
+
+
+
+.signin-form{
+
+
 }

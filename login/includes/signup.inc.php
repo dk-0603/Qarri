@@ -13,5 +13,5 @@ if(isset($_POST["register"]))
 
     $signup->signupUser();
 
-    header("location: ../index.php?error=none");
+    header("location: ../signin.php?error=none");
 }

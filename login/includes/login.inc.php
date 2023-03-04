@@ -9,9 +9,9 @@ if(isset($_POST["register"]))
     include "../classes/dbh.classes.php";
     include "../classes/login.classes.php";
     include "../classes/login-contr.classes.php";
-    $signup = new LoginContr($uid, $password);
+    $login = new LoginContr($uid, $password);
 
-    $signup->signupUser();
+    $login->loginUser();
 
-    header("location: ../index.php?error=none");
+    header("location: ../../index.php");
 }
