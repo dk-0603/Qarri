@@ -4,13 +4,17 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
-    background-color: #383e42;
+
 }
 header {
     display: flex;
     justify-content:center;
-   align-items: center;
- 
+    align-items: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/ballina.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 300px;
 }
 
 
@@ -20,6 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10px;
+    
 }
 li, a, button{
     font-family: "Montserrat", sans-serif;
@@ -76,7 +81,3 @@ button:hover{
 
 
 
-.signin-form{
-
-
-}
